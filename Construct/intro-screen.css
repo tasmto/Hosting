@@ -1,0 +1,18 @@
+.page-title {
+    animation: hideTitleSmoothly 350ms ease-in-out linear;
+}
+
+@keyframes hideTitleSmoothly {
+    0% {
+        transform: scaleY(100%) translateY(0);
+        opacity: 1;
+    }
+    90% {
+        margin: 0 0 1rem;
+        opacity: 0;
+        transform: scaleY(0%) translateY(10%);
+    }
+    100% {
+        display: none;
+    }
+}

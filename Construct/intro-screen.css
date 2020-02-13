@@ -1,5 +1,6 @@
 .page-title {
     animation: hideTitleSmoothly 350ms ease-in-out linear;
+    display: none;
 }
 
 @keyframes hideTitleSmoothly {

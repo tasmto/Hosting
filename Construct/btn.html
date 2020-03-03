@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Start menu</title>
+
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.466);
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.35em 1.2em;
+            border: none;
+            background: none;
+            margin: 0 0.3em 0.5em 0;
+            border-radius: 0.12em;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            font-size: 24px;
+            color: #ffffff;
+            width: 15em;
+            background: #797EB4;
+            text-align: center;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+        
+        .btn:hover {
+            cursor: pointer;
+            -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+        }
+        
+        .btn.primary {
+            background: #3E3684;
+            animation: btnLoop 2s ease-in-out alternate infinite;
+        }
+        
+        .btn.primary:hover {
+            animation: none;
+        }
+        
+        @keyframes btnLoop {
+            0% {
+                transform: scale(0.95);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="btn-container" aria-hidden="true">
+        <a class="btn primary" target="_top" href="https://umich.instructure.com/courses/368871/modules/items/924290" title="Start the course!">Enter Your Course</a>
+    </div>
+
+
+</body>
+
+</html>
